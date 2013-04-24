@@ -2,13 +2,14 @@ var Animate = function()
 {
   
   var speed = 500,
-  transitionEndEvents = 'webkitTransitionEnd transitionend oTransitionEnd MSTransitionEnd transitionend';
+      isTransitions = Modernizr.csstransitions,
+      transitionEndEvents = 'webkitTransitionEnd transitionend oTransitionEnd MSTransitionEnd transitionend';
 
   var animate = function(object, cssProperties, callback, duration) 
   {
     duration = duration || speed;
   
-    if (Modernizr.csstransitions) 
+    if (isTransitions) 
     {
       object.css("transition", "all " + duration + "ms ease-in-out");
   
