@@ -6,7 +6,7 @@ var Animate = function()
       isTransitions = Modernizr.csstransitions,
       transitionEndEvents = 'webkitTransitionEnd transitionend oTransitionEnd MSTransitionEnd transitionend';
 
-  var animate = function(object, cssProperties, duration, callback) 
+  this.animate = function(object, cssProperties, duration, callback) 
   {
     duration = duration || speed;
   
