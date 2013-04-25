@@ -15,3 +15,6 @@
 * Object Oriented Javascript
   * Instantiate Animate - `var app = new Animate();`
   * Call animate function passing in css properties, duration (in milli seconds) or call back - `app.animate($(selector),{ property : value }, 1000);`
+ 
+* Procedural Javascript
+  * Call animate function passing in css properties, duration (in milli seconds) or call back - `animate($(selector),{ property : value }, 1000);`
